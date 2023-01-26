@@ -1,0 +1,28 @@
+body {
+    font-family: monospace;
+}
+
+.wrapper {
+    display: block;
+    margin: 100px auto;
+    width: 800px;
+    }
+
+.header {
+    text-align: center;
+    font-family: monospace;
+    margin: 50px auto;
+}
+
+p {
+    font-size: 14px;
+}
+
+.cursor p::after {
+    content: "";
+    height: 14px;
+    width: 8px;
+    background: #000;
+    display: inline-block;
+}
+
