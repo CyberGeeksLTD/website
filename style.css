@@ -15,14 +15,26 @@ body {
 }
 
 p {
+    animation: type 4s steps(60, end);
     font-size: 14px;
+    overflow: hidden;
 }
 
-.cursor p::after {
+.introduction::after {
     content: "";
     height: 14px;
     width: 8px;
     background: #000;
     display: inline-block;
+    animation: cursor-blink 1s steps(2) infinite;
 }
 
+@keyframes cursor-blink {
+    0% {
+        opacity: 0; }
+}
+
+@keyframes type {
+    from { 
+        width: 0; }
+}
