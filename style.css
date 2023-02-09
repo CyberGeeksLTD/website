@@ -1,4 +1,6 @@
 body {
+    background: #000;
+    color: #fff;
     font-family: monospace;
 }
 
@@ -8,16 +10,25 @@ body {
     width: 800px;
     }
 
-.header {
+header {
     text-align: center;
-    font-family: monospace;
-    margin: 50px auto;
+    margin: 100px auto 50px auto;
 }
 
-p {
-    animation: type 4s steps(60, end);
+h2 {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+main p,
+main ul li {
     font-size: 14px;
-    overflow: hidden;
+}
+
+footer {
+    font-size: 12px;
+    margin: 100px auto 50px auto;
+    text-align: center;
 }
 
 .introduction::after {
