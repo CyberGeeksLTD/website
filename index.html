@@ -1,7 +1,60 @@
 <html lang="en">
     <head>
         <title>CyberGeeks</title>
-        <link rel="stylesheet" href="style.css">
+        <style>
+body {
+    background: #000;
+    color: #fff;
+    font-family: monospace;
+    font-size: 14px;
+    text-size-adjust: 100%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 700px;
+    justify-content: center;
+}
+.sm-pre {
+    display: none;
+}
+header {
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+main p,
+main ul li {
+    font-size: 14px;
+}
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+     .sm-pre {
+        display: block;
+        #margin-left: -15vw;
+        justify-content: center;
+    }
+    .lg-pre {
+        display: none;
+    }
+    .grid-container {
+        grid-template-columns: auto;
+    }
+    .grid-item {
+        padding: 0 10px;
+    }
+  }
+        </style>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
@@ -17,9 +70,9 @@
         <link rel="icon" href="images/icon32.jpg" sizes="32x32">
         <link rel="icon" href="images/icon192.jpg" sizes="192x192">
     </head>
-    <body class="wrapper">
-        <header class="header">
-            <pre>                                                                                             
+    <body class="grid-container">
+        <header class="header grid-item">
+            <pre class="lg-pre">                                                                                             
     ,o888888o.  .`8888.      ,8' 8 888888888o   8 8888888888   8 888888888o.   
    8888     `88. `8.`8888.    ,8'  8 8888    `88. 8 8888         8 8888    `88.  
 ,8 8888       `8. `8.`8888.  ,8'   8 8888     `88 8 8888         8 8888     `88  
@@ -42,8 +95,21 @@
     8888     ,88'  8 8888         8 8888         8 8888   `Y8.  `8b.  ;8.`8888   
      `8888888P'    8 888888888888 8 888888888888 8 8888     `Y8. `Y8888P ,88P'   
             </pre>
+            <pre class="sm-pre">
+    ,o888888o.        ,o888888o.    
+   8888     `88.     8888     `88.  
+,8 8888       `8. ,8 8888       `8. 
+88 8888           88 8888           
+88 8888           88 8888           
+88 8888           88 8888           
+88 8888           88 8888   8888888 
+`8 8888       .8' `8 8888       .8' 
+   8888     ,88'     8888     ,88'  
+    `8888888P'        `8888888P'    
+                </pre>
+                <h1>CyberGeeks</h1>
         </header>
-        <main>
+        <main class="grid-item grid-container">
             <div id="introduction">
                 <h2>~/about_us/$</h2>
                 <p class="introduction">We grew up with computers. These mysterious devices inspired our imaginations early on, turning us into geeks in the world of IT. Cyber(security) just keeps us on our toes. Every day, we need to understand how things in IT work, how they can be exploited in undesired ways, and protect them against malicious intentions.</p>
@@ -67,10 +133,9 @@
                 </ul>
             </div>
         </main>
-        <footer>
+        <footer class="grid-item">
             <p class="contacts"></p>
-            <p class="copyright">Copyright (C) 2019-2023 All Rights Reserved.<br>Made with love in Sofia, Bulgaria.</p>
-            <p class=
+            <p class="copyright">Copyright (C) 2019-2023 CyberGeeks LTD.<br>All Rights Reserved.<br>Made with love in Sofia, Bulgaria.</p>
         </footer>
     </body>
 </html>
