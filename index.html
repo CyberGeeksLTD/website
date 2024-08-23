@@ -1,58 +1,83 @@
 <html lang="en">
     <head>
-        <title>CyberGeeks</title>
+        <title>Cybergeeks -- We help organisations build and maintain secure digital environments</title>
         <style>
-body {
-    background: #000;
-    color: #fff;
-    font-family: monospace;
-    font-size: 14px;
-    text-size-adjust: 100%;
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: 700px;
-    justify-content: center;
-}
-.sm-pre {
-    display: none;
-}
-header {
-    text-align: center;
-}
-h1 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 0;
-}
-h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 40px;
-}
-main p,
-main ul li {
-    font-size: 14px;
-}
-footer {
-    font-size: 12px;
-    text-align: center;
-}
-@media only screen and (max-width: 768px) {
-     .sm-pre {
-        display: block;
-        justify-content: center;
-    }
-    .lg-pre {
-        display: none;
-    }
-    .grid-container {
-        grid-template-columns: auto;
-    }
-    .grid-item {
-        padding: 0 10px;
-    }
-  }
+            @font-face {
+                font-family: "Courier Prime";
+                src: url("static/fonts/CourierPrime-Regular.ttf") format(truetype);
+            }
+            body {
+                background: #000;
+                color: #fff;
+                font-family: "Courier Prime";
+                font-size: 14px;
+                text-size-adjust: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: 900px;
+                justify-content: center;
+		margin: 10px;
+            }
+            #header {
+                height: 45vh;
+                display: flex;
+                align-items: flex-end;
+            }
+            h1 {
+                font-size: 8rem;
+                margin: 0;
+            }
+            #introduction {
+		align-items: flex-start;
+                display: flex;
+		height: 5vh;
+		justify-content: right;
+            }
+	    p {
+		font-size: 0.8rem;
+		margin: 0;
+	    }
+	    #introduction p {
+                font-size: 1.1rem;
+            }
+	    #contact {
+	    	align-items: center;
+		display: flex;
+		height: 20vh;
+		justify-content: center;
+	    }
+	    #contact p {
+	    	font-size: 1.3rem;
+	    }
+            #footer {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                height: 10vh;
+            }
+	    button {
+		display: block;
+	    }
+	    @media only screen and (max-width: 920px) {
+	    	.grid-container {
+		    grid-template-columns: auto;
+		}
+		h1 {
+		    font-size: 6rem;
+		}
+		p.introduction
+	    }
+	    @media only screen and (max-width: 768px) {
+	        .grid-container {
+		    grid-template-columns: auto;
+	        }
+		h1 {
+		    font-size: 4rem;
+		}
+	    }
         </style>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,9 +85,9 @@ footer {
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-touch-fullscreen" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
-        <meta name="description" content="We help organisations protect themselves against malicious intentions in the digital world.">
-        <meta property="og:title" content="CyberGeeks">
-        <meta name="og:description" content="We help organisations protect themselves against malicious intentions in the digital world.">
+        <meta name="description" content="We help organisations build and maintain secure digital environments.">
+        <meta property="og:title" content="Cybergeeks">
+        <meta name="og:description" content="We help organisations build and maintain secure digital environments.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://cybergeeks.eu">
         <meta property="og:image" content="https://cybergeeks.eu/images/home.png">
@@ -70,71 +95,20 @@ footer {
         <link rel="icon" href="images/icon192.jpg" sizes="192x192">
     </head>
     <body class="grid-container">
-        <header class="header grid-item">
-            <pre class="lg-pre">                                                                                             
-    ,o888888o.  .`8888.      ,8' 8 888888888o   8 8888888888   8 888888888o.   
-   8888     `88. `8.`8888.    ,8'  8 8888    `88. 8 8888         8 8888    `88.  
-,8 8888       `8. `8.`8888.  ,8'   8 8888     `88 8 8888         8 8888     `88  
-88 8888            `8.`8888.,8'    8 8888     ,88 8 8888         8 8888     ,88  
-88 8888             `8.`88888'     8 8888.   ,88' 8 888888888888 8 8888.   ,88'  
-88 8888              `8. 8888      8 8888888888   8 8888         8 888888888P'   
-88 8888               `8 8888      8 8888    `88. 8 8888         8 8888`8b       
-`8 8888       .8'      8 8888      8 8888      88 8 8888         8 8888 `8b.     
-   8888     ,88'       8 8888      8 8888    ,88' 8 8888         8 8888   `8b.   
-    `8888888P'         8 8888      8 888888888P   8 888888888888 8 8888     `88. 
-                                                                                 
-     ,o888888o.    8 8888888888   8 8888888888   8 8888     ,88'   d888888o.     
-    8888     `88.  8 8888         8 8888         8 8888    ,88'  .`8888:' `88.   
- ,8 8888       `8. 8 8888         8 8888         8 8888   ,88'   8.`8888.   Y8   
- 88 8888           8 8888         8 8888         8 8888  ,88'    `8.`8888.       
- 88 8888           8 888888888888 8 888888888888 8 8888 ,88'      `8.`8888.      
- 88 8888           8 8888         8 8888         8 8888 88'        `8.`8888.     
- 88 8888   8888888 8 8888         8 8888         8 888888<          `8.`8888.    
- `8 8888       .8' 8 8888         8 8888         8 8888 `Y8.    8b   `8.`8888.   
-    8888     ,88'  8 8888         8 8888         8 8888   `Y8.  `8b.  ;8.`8888   
-     `8888888P'    8 888888888888 8 888888888888 8 8888     `Y8. `Y8888P ,88P'   
-            </pre>
-            <pre class="sm-pre">
-    ,o888888o.        ,o888888o.    
-   8888     `88.     8888     `88.  
-,8 8888       `8. ,8 8888       `8. 
-88 8888           88 8888           
-88 8888           88 8888           
-88 8888           88 8888           
-88 8888           88 8888   8888888 
-`8 8888       .8' `8 8888       .8' 
-   8888     ,88'     8888     ,88'  
-    `8888888P'        `8888888P'    
-                </pre>
-                <h1>CyberGeeks</h1>
-        </header>
-        <main class="grid-item grid-container">
-            <div id="introduction">
-                <h2>~/about_us/$</h2>
-                <p class="introduction">We grew up with computers. These mysterious devices inspired our imaginations early on, turning us into geeks in the world of IT. Cyber(security) just keeps us on our toes. Every day, we need to understand how things in IT work, how they can be exploited in undesired ways, and protect them against malicious intentions.</p>
-            </div>
-            <div id="certifications">
-                <h2>~/our_certs/$</h2>
-                <ul>
-                    <li>Palo Alto Networks Certified Network Security Engineer (PCNSE) -- x2</li>
-                    <li>Cisco Certified Network Professional -- x1</li>
-                    <li>Cisco Certified Network Associate -- x1</li>
-                    <li>Microsoft Security, Compliance, and Identity Fundamentals -- x1</li>
-                    <li>Microsoft Azure Fundamentals -- x1</li>
-                    <li>Microsoft 365 Fundamentals -- x1</li>
-                </ul>
-            </div>
-            <div id="contacts">
-                <h2>~/contacts/$</h2>
-                <ul>
-                    <li>help@cybergeeks.eu</li>
-                    <li>+359 88 7002558</li>
-                </ul>
-            </div>
-        </main>
-        <footer class="grid-item">
+        <header id="header" class="grid-item">
+            <h1>cybergeeks_</h1>
+	</header>
+	<main id="main" class="grid-item">
+	    <div id="introduction">
+	        <p class="introduction">We help organisations build and maintain secure digital environments.</p>
+	    </div>
+	    <div id="contact">
+		<p>Say hi at hi [@] cybergeek [.] eu!</p>
+	    </div>
+	</main>
+        <footer id="footer" class="grid-item">
             <p class="contacts"></p>
-            <p class="copyright">Copyright (C) 2019-2024 CyberGeeks LTD.<br>All Rights Reserved.<br>Made with love in Sofia, Bulgaria.</p>
+	    <p class="copyright">Copyright (C) 2019-2024 Cyber Geeks LTD.<br>All Rights Reserved.<br>Made with love in Sofia, Bulgaria.<br>build: 2024082201</p>
         </footer>
     </body>
 </html>
