@@ -30,6 +30,13 @@
                 font-size: 8rem;
                 margin: 0;
             }
+	    .blinking-cursor {
+                -webkit-animation: 2s blink step-end infinite;
+                -moz-animation: 2s blink step-end infinite;
+                -ms-animation: 2s blink step-end infinite;
+                -o-animation: 2s blink step-end infinite;
+                animation: 2s blink step-end infinite;
+            }
             #introduction {
 		align-items: flex-start;
                 display: flex;
@@ -92,6 +99,46 @@
 		}
 
 	    }
+	    @keyframes "blink" {
+                from, to {
+                    color: transparent;
+                }
+                50% {
+                    color: white;
+                }
+            }
+	    @-moz-keyframes blink {
+	        from, to {
+	            color: transparent;
+	        }
+	        50% {
+	            color: white;
+	        }
+	    }
+	    @-webkit-keyframes "blink" {
+	        from, to {
+	            color: transparent;
+	        }
+	        50% {
+	            color: white;
+	        }
+	    }
+	    @-ms-keyframes "blink" {
+	        from, to {
+	            color: transparent;
+	        }
+	        50% {
+	            color: white;
+	        }
+	    }
+	    @-o-keyframes "blink" {
+	        from, to {
+	            color: transparent;
+	        }
+	        50% {
+	            color: white;
+	        }
+	    }
         </style>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -110,7 +157,7 @@
     </head>
     <body class="grid-container">
         <header id="header" class="grid-item">
-            <h1>cybergeeks_</h1>
+		<h1>cybergeeks<span class="blinking-cursor">_</span></h1>
 	</header>
 	<main id="main" class="grid-item">
 	    <div id="introduction">
@@ -122,7 +169,7 @@
 	</main>
         <footer id="footer" class="grid-item">
             <p class="contacts"></p>
-	    <p class="copyright">Copyright (C) 2019-2024 Cyber Geeks LTD.<br>All Rights Reserved.<br>Made with love in Sofia, Bulgaria.<br>build: 2024082201</p>
+	    <p class="copyright">Copyright (C) 2019-2024 Cyber Geeks LTD.<br>All Rights Reserved.<br>Made with love in Sofia, Bulgaria.<br>build: 2024082801</p>
         </footer>
     </body>
 </html>
