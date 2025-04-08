@@ -1,0 +1,7 @@
+whatsapp.net
+*.whatsapp.net
+whatsapp.com
+*.whatsapp.com
+signal.org
+*.signal.org
+
